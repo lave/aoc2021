@@ -1,0 +1,3 @@
+#!/bin/sh
+
+elixirc --ignore-module-conflict Common.ex $1
