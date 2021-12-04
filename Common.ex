@@ -8,4 +8,8 @@ defmodule Common do
     def parseInt(s) do
         elem(Integer.parse(s), 0)
     end
+
+    def transpose(matrix) do
+        Enum.zip(matrix) |> Enum.map(&Tuple.to_list/1)
+    end
 end
